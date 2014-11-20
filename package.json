@@ -4,7 +4,8 @@
   "description": "Post today's weather to a slack channel.",
   "main": "slackWeather.js",
   "dependencies": {
-    "node-slackr": "0.0.4"
+    "node-slackr": "0.0.4",
+    "request": "~2.48.0"
   },
   "devDependencies": {},
   "scripts": {
