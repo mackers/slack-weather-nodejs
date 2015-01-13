@@ -29,7 +29,7 @@ request("http://api.openweathermap.org/data/2.5/group?id="+cities.join(',')+"&un
   	text += "*"+currentCity.name+"*: ";
       //text += ":" + currentCity.weather[0].icon + ": ";
   	text += currentCity.weather[0].main + ", " + currentCity.weather[0].description + ". ";
-  	text += "Temp: " + currentCity.main.temp + "°c. ";
+  	text += "Temp: " + Math.round(currentCity.main.temp) + "°c. ";
       text += "\n";
   }
 
