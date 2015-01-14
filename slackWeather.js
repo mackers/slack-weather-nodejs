@@ -37,7 +37,7 @@ request("http://api.openweathermap.org/data/2.5/group?id="+cities.join(',')+"&un
 
   if (text.match(/rain/i)) {
     icon_emoji = ':umbrella:';
-  } else if (text.match(/sun/i)) {
+  } else if (text.match(/sun|clear/i)) {
     icon_emoji = ':sunny:';
   } else if (text.match(/(broken clouds|scattered clouds)/i)) {
     icon_emoji = ':partly_sunny:';
